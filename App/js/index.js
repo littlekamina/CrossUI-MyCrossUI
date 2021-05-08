@@ -33,7 +33,7 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput5")
-                .setLeft("3.0476190476190474em")
+                .setLeft("0.7619047619047619em")
                 .setTop("3.8095238095238093em")
                 .setWidth("29.409523809523808em")
                 .setHeight("4.8em")
@@ -55,6 +55,58 @@ xui.Class('App', 'xui.Module',{
                         "id":"c",
                         "caption":"Мелоксикам",
                         "imageClass":"xui-icon-number3"
+                    }
+                ])
+                .setCustomStyle({
+                    "ICONB":{
+                        "color":"#DC143C",
+                        "line-height":"1.22"
+                    }
+                })
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput194")
+                .setLeft("0.7619047619047619em")
+                .setTop("11.428571428571429em")
+                .setWidth("29.409523809523808em")
+                .setHeight("4.8em")
+                .setLabelSize("8em")
+                .setLabelCaption("Drop List Input")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id":"a",
+                        "caption":"Парацетамол",
+                        "imageClass":"xui-icon-number1"
+                    },
+                    {
+                        "id":"b",
+                        "caption":"Ибупрофен",
+                        "imageClass":"xui-icon-number2"
+                    },
+                    {
+                        "id":"c",
+                        "caption":"Мелоксикам",
+                        "imageClass":"xui-icon-number3"
+                    }
+                ])
+                .setVisibility("hidden")
+                .onCommand([
+                    {
+                        "desc":"Action 1",
+                        "type":"page",
+                        "target":"*",
+                        "args":[ ],
+                        "method":"show",
+                        "conditions":[
+                            {
+                                "left":"{page.xui_ui_comboinput5}",
+                                "symbol":"=",
+                                "right":"{page.xui_ui_comboinput5.getValue(Парацетамол)}"
+                            }
+                        ]
                     }
                 ])
                 .setCustomStyle({
