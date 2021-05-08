@@ -90,6 +90,36 @@ xui.Class('App', 'xui.Module',{
                         "caption":"7.5 мг."
                     }
                 ])
+                .beforeUIValueSet([
+                    {
+                        "desc":"Action 1",
+                        "type":"control",
+                        "target":"xui_ui_comboinput194",
+                        "args":[ ],
+                        "method":"show",
+                        "conditions":[
+                            {
+                                "left":"{page.xui_ui_comboinput5}",
+                                "symbol":"objarrhaskey",
+                                "right":"{1}"
+                            }
+                        ]
+                    },
+                    {
+                        "desc":"Action 2",
+                        "type":"control",
+                        "target":"xui_ui_comboinput194",
+                        "args":[ ],
+                        "method":"hide",
+                        "conditions":[
+                            {
+                                "left":"{page.xui_ui_comboinput5}",
+                                "symbol":"objarrhaskey",
+                                "right":"{2;3}"
+                            }
+                        ]
+                    }
+                ])
                 .onCommand([ ])
                 .setCustomStyle({
                     "ICONB":{
