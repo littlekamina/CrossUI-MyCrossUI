@@ -72,43 +72,25 @@ xui.Class('App', 'xui.Module',{
                 .setTop("11.428571428571429em")
                 .setWidth("29.409523809523808em")
                 .setHeight("4.8em")
+                .setVisibility("visible")
                 .setLabelSize("8em")
                 .setLabelCaption("Drop List Input")
                 .setType("listbox")
                 .setItems([
                     {
-                        "id":"a",
-                        "caption":"Парацетамол",
-                        "imageClass":"xui-icon-number1"
+                        "id":"3.1",
+                        "caption":"3.75 мг."
                     },
                     {
-                        "id":"b",
-                        "caption":"Ибупрофен",
-                        "imageClass":"xui-icon-number2"
+                        "id":"3.2",
+                        "caption":"5 мг."
                     },
                     {
-                        "id":"c",
-                        "caption":"Мелоксикам",
-                        "imageClass":"xui-icon-number3"
+                        "id":"3.3",
+                        "caption":"7.5 мг."
                     }
                 ])
-                .setVisibility("hidden")
-                .onCommand([
-                    {
-                        "desc":"Action 1",
-                        "type":"page",
-                        "target":"*",
-                        "args":[ ],
-                        "method":"show",
-                        "conditions":[
-                            {
-                                "left":"{page.xui_ui_comboinput5}",
-                                "symbol":"=",
-                                "right":"{page.xui_ui_comboinput5.getValue(Парацетамол)}"
-                            }
-                        ]
-                    }
-                ])
+                .onCommand([ ])
                 .setCustomStyle({
                     "ICONB":{
                         "color":"#DC143C",
