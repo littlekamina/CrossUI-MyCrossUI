@@ -42,17 +42,17 @@ xui.Class('App', 'xui.Module',{
                 .setType("listbox")
                 .setItems([
                     {
-                        "id":"a",
+                        "id":"1",
                         "caption":"Парацетамол",
                         "imageClass":"xui-icon-number1"
                     },
                     {
-                        "id":"b",
+                        "id":"2",
                         "caption":"Ибупрофен",
                         "imageClass":"xui-icon-number2"
                     },
                     {
-                        "id":"c",
+                        "id":"3",
                         "caption":"Мелоксикам",
                         "imageClass":"xui-icon-number3"
                     }
