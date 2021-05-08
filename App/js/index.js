@@ -43,26 +43,26 @@ xui.Class('App', 'xui.Module',{
                 .setItems([
                     {
                         "id":"a",
-                        "caption":"item 1",
+                        "caption":"Парацетамол",
                         "imageClass":"xui-icon-number1"
                     },
                     {
                         "id":"b",
-                        "caption":"item 2",
+                        "caption":"Ибупрофен",
                         "imageClass":"xui-icon-number2"
                     },
                     {
                         "id":"c",
-                        "caption":"item 3",
+                        "caption":"Мелоксикам",
                         "imageClass":"xui-icon-number3"
-                    },
-                    {
-                        "id":"d",
-                        "caption":"item 4",
-                        "imageClass":"xui-icon-number4",
-                        "disabled":true
                     }
                 ])
+                .setCustomStyle({
+                    "ICONB":{
+                        "color":"#DC143C",
+                        "line-height":"1.22"
+                    }
+                })
             );
             
             return children;
