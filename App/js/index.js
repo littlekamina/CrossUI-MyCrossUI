@@ -19,7 +19,52 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button3")
+                .setLeft("19.047619047619047em")
+                .setTop("34.285714285714285em")
+                .setWidth("21.257142857142856em")
+                .setHeight("6.628571428571429em")
+                .setCaption("Button")
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput5")
+                .setLeft("3.0476190476190474em")
+                .setTop("3.8095238095238093em")
+                .setWidth("29.409523809523808em")
+                .setHeight("4.8em")
+                .setLabelSize("8em")
+                .setLabelCaption("Drop List Input")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id":"a",
+                        "caption":"item 1",
+                        "imageClass":"xui-icon-number1"
+                    },
+                    {
+                        "id":"b",
+                        "caption":"item 2",
+                        "imageClass":"xui-icon-number2"
+                    },
+                    {
+                        "id":"c",
+                        "caption":"item 3",
+                        "imageClass":"xui-icon-number3"
+                    },
+                    {
+                        "id":"d",
+                        "caption":"item 4",
+                        "imageClass":"xui-icon-number4",
+                        "disabled":true
+                    }
+                ])
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
